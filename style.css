@@ -1,0 +1,84 @@
+body {
+  width: 100vw;
+  background-color: rgb(37, 37, 37);
+  color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(53, 158, 53);
+  font-size: 3em;
+}
+
+#input-container {
+  text-align: center;
+}
+
+input {
+  background-color: grey;
+  margin: 0 2em;
+}
+
+::placeholder {
+  color: black;
+}
+
+#submit-btn {
+  background: rgb(53, 158, 53);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: rgb(37, 37, 37);
+  font-size: 1em;
+  text-decoration: none;
+  margin: auto 1em;
+}
+
+#submit-btn:hover {
+  background: rgb(111, 170, 111);
+  text-decoration: none;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+#sort-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
+}
+
+p {
+  margin: 0 2em;
+  color: grey;
+}
+
+p:hover {
+  cursor: pointer;
+  color: #eeeeee;
+}
+
+.active {
+  color: #eeeeee;
+}
+
+table {
+  width: 75%;
+}
+
+th {
+  font-size: 1.5em;
+  color: rgb(53, 158, 53);
+}
+
+td {
+  text-align: center;
+}
+
+i:hover {
+  cursor: pointer;
+}

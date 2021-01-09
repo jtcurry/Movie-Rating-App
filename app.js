@@ -64,10 +64,16 @@ const fillTable = () => {
 
 //RESET TABLE
 const resetTable = () => {
-  $("table").html("<tr><th>Title</th><th>Rating</th></tr>");
+  $("table").html("<tr><th>Title</th><th>Rating</th><th></th></tr>");
 };
 
-//DELETE ROW
-$("table").on("click", "i", function () {
+//DELETE
+$("table").on("click", "i", function (event) {
+  let targetElement =
+    event.target.parentElement.parentElement.children[0].innerText;
+  let indexToRemove = moviesArray.findIndex(
+    (movie) => movie.title === targetElement
+  );
+  moviesArray.splice(indexToRemove, 1);
   $(this).closest("tr").remove();
 });
